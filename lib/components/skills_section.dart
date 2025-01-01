@@ -9,7 +9,7 @@ class SkillsSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(top: 40.0), // Add space between sections
+      padding: const EdgeInsets.only(top: 10.0), // Add space between sections
       child: Column(
         crossAxisAlignment:
             CrossAxisAlignment.center, // Center align the children

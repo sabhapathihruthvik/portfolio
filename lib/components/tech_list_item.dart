@@ -7,6 +7,7 @@ class TechListItem extends StatefulWidget {
   const TechListItem({super.key, required this.tech});
 
   @override
+  // ignore: library_private_types_in_public_api
   _TechListItemState createState() => _TechListItemState();
 }
 
@@ -36,14 +37,14 @@ class _TechListItemState extends State<TechListItem> {
             children: [
               AnimatedContainer(
                 key: _key,
-                duration: Duration(milliseconds: 300),
+                duration: const Duration(milliseconds: 300),
                 width: 80,
                 height: 80,
                 transform: Matrix4.rotationZ(isHovered ? 0.1 : 0),
                 decoration: BoxDecoration(
                   boxShadow: isHovered
                       ? [
-                          BoxShadow(
+                          const BoxShadow(
                             color: Colors.black26,
                             offset: Offset(0, 8),
                             blurRadius: 15,
@@ -58,10 +59,10 @@ class _TechListItemState extends State<TechListItem> {
                   height: 40,
                 ),
               ),
-              SizedBox(height: 10), // Space between icon and name
+              const SizedBox(height: 10), // Space between icon and name
               Text(
                 widget.tech['name']!,
-                style: TextStyle(color: Colors.white, fontSize: 16),
+                style: const TextStyle(color: Colors.white, fontSize: 16),
               ),
             ],
           ),
@@ -80,7 +81,7 @@ class _TechListItemState extends State<TechListItem> {
                 : null, // Align left if on the left side
             child: AnimatedOpacity(
               opacity: isHovered ? 1.0 : 0.0,
-              duration: Duration(milliseconds: 300),
+              duration: const Duration(milliseconds: 300),
               child: Material(
                 color: Colors.black87,
                 borderRadius: BorderRadius.circular(8),
@@ -92,16 +93,16 @@ class _TechListItemState extends State<TechListItem> {
                     children: [
                       Text(
                         widget.tech['name']!,
-                        style: TextStyle(
+                        style: const TextStyle(
                           color: Colors.white,
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                      SizedBox(height: 8),
+                      const SizedBox(height: 8),
                       Text(
                         widget.tech['description']!,
-                        style: TextStyle(
+                        style: const TextStyle(
                           color: Colors.white70,
                           fontSize: 14,
                         ),

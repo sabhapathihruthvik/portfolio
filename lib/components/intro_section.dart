@@ -18,7 +18,7 @@ class IntroSection extends StatelessWidget {
             Image.asset(
               'assets/profile-pic.png', // Your image file
               width: MediaQuery.of(context).size.width /
-                  2.5, // Adjust width for balance
+                  3.5, // Adjust width for balance
               height: MediaQuery.of(context).size.height * 0.8, // Adjust height
               fit: BoxFit.contain,
             ),
@@ -66,15 +66,15 @@ class IntroSection extends StatelessWidget {
                       // ignore: deprecated_member_use
                       TypewriterAnimatedTextKit(
                         text: const [
-                          'develop Flutter apps',
-                          'Create AI/ML models',
-                          'Explore new technologies and frameworks.',
+                          'LOVE TO DEVELOP FLUTTER APPS.',
+                          'LIKE TO EXPLORE AI/ML.',
+                          'AM INTERESTED TO LEARN NEW TECH!',
                         ],
                         speed: const Duration(milliseconds: 150),
                         textStyle: GoogleFonts.patrickHand(
                           fontSize: 30,
                           //fontWeight: FontWeight.w400,
-                          color: Colors.deepPurple,
+                          color: Colors.deepOrange,
                         ),
                         totalRepeatCount: 1,
                       ),
